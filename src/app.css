@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+:root {
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --button: rgb(25, 25, 25);
+  --button-hover: rgb(55, 55, 55);
+  --button-click: rgb(38, 38, 38);
+  --grey-border: rgb(160, 160, 160);
+  --grey-bg: rgb(220, 220, 220);
+  --grey-hover: rgb(231, 227, 227);
+  --grey-click: rgb(222, 222, 222);
+  --background: rgb(245, 245, 245);
+  --delete: rgb(209, 26, 42);
+  --delete-hover: rgb(168, 39, 39);
+  --delete-click: rgb(139, 36, 36);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--button);
+  padding: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container-wrap {
+  margin-top: 36px;
+  padding: 32px;
+  max-width: 550px;
+  width: 100%;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: var(--shadow-md);
+  border-radius: 16px;
+}
+.container-wrap h3 {
+  margin-bottom: 24px ;
+}
+.wrapper {
+  line-height: 30px ;
+}
+.form-input {
+  display: flex;
+  gap: 22px;
+}
+.form-input button {
+  padding: 4px 12px;
+  background-color: var(--button);
+  font-size: 0.9rem;
+  color: white; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form-input button:hover {
+  background-color: var(--button-hover);
+}
+.form-input button:active {
+  background-color: var(--button-click);
+}
+.button {
+  display: flex;
+  gap: 6px;
+}
+.input-group{
+  max-width: 500px;
+  width: 77%;
+}
+.input-group input {
+  width: 100%;
+  padding: 6px 6px;
+  background-color: var(--background);
+  border-radius: 8px;
+  border: 2px solid rgb(145, 145, 145);
+}
+.text-warning {
+  color: red;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.list-results {
+  margin-top: 36px;
+}
+.list-results h3 {
+  margin: 12px 0;
+  padding: 4px 0;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.item-text {
+  font-weight: 500;
+
+}
+.item button {
+  font-size: 0.8rem;
+  padding: 2px 4px;
+}
+.button-wrapper {
+  display: flex;
+  gap: 6px;
+}
+.button-wrapper button {
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.edit-button {
+  border: 1px solid var(--grey-border);
+  background-color: var(--background);
+
+}
+.edit-button:hover {
+  background-color: var(--grey-hover);
+}
+.edit-button:active {
+  background-color: var(--grey-click);
+}
+.delete-button {
+  background-color: var(--delete);
+  border: var(--delete);
+  color: white;
+}
+.delete-button:hover {
+  background-color: var(--delete-hover);
+} 
+.delete-button:active {
+  background-color: var(--delete-click);
+}
